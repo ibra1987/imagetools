@@ -3,6 +3,15 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
 
-module.exports = nextConfig
+  async rewrites() {
+    return [
+      {
+        source: "/api/",
+        destination: "http://localhost:3000/api/",
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
