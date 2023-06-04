@@ -8,8 +8,8 @@ function Hero() {
       <p className="text-gray-500 p-4 w-11/12 md:w-2/5 text-sm">
         Say goodbye to hours of editing and hello to lightning-fast
         transformations with our powerful image tools. Whether you need to
-        remove backgrounds, compress files, or apply stunning filters, we've got
-        you covered."
+        remove backgrounds, compress files, or apply stunning filters, we&apos;
+        ve got you covered.
       </p>
       <h2 className="text-center font-medium p-2 bg-indigo-600 text-gray-100 rounded px-6 cursor-pointer hover:bg-indigo-700 transition delay-75 ease-in-out">
         Choose Your Tool

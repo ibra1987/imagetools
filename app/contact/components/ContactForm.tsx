@@ -12,7 +12,9 @@ function ContactForm() {
   });
   const appState = appStore();
 
-  const onchange = (e: React.SyntheticEvent<HTMLInputElement>) => {
+  const onchange = (
+    e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => {
     appState.reset();
     setFeedBack({
       ...feedBack,

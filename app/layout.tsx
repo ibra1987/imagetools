@@ -2,7 +2,6 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Header from "./components/reusables/Header";
 import Footer from "./components/reusables/Footer";
-import { AiOutlineWarning } from "react-icons/ai";
 
 const poppins = Poppins({ weight: ["400", "500"], subsets: ["latin"] });
 

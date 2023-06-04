@@ -90,7 +90,7 @@ export default async function Page() {
             </h3>
             <div>
               <p className="my-2">
-                We prioritize the safety and privacy of our users' files when
+                We prioritize the safety and privacy of our users files when
                 using our image compression tool. Here's how we ensure a secure
                 experience:
               </p>
@@ -141,7 +141,7 @@ export default async function Page() {
                     As an extra precaution, we scan all uploaded files for
                     viruses and malware. This helps prevent the transmission of
                     infected files and protects the integrity of our platform
-                    and users' devices.
+                    and users devices.
                   </li>
                   <li className={liClass}>
                     <span className="font-medium ">

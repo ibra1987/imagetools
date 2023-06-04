@@ -28,8 +28,9 @@ const page = () => {
               can upload 20 files max at a time.
             </li>
             <li className={liClass}>
-              Once you have selected the desired images, click on the "Open" or
-              "Choose" button in the file selection dialog box.
+              Once you have selected the desired images, click on the{" "}
+              <em>Open</em> or <em>Choose</em> button in the file selection
+              dialog box.
             </li>
             <li className={liClass}>
               The selected images will start uploading.
@@ -68,16 +69,16 @@ const page = () => {
             <strong>Secure Connection:</strong> The tool typically operates over
             a secure connection (HTTPS), which ensures that the data you upload
             and download is encrypted and protected from interception by
-            unauthorized parties. Look for the padlock icon in your browser's
-            address bar to confirm the secure connection.
+            unauthorized parties. Look for the padlock icon in your
+            browser&apos; s address bar to confirm the secure connection.
           </span>{" "}
           <span className="my-2 inline-block">
             <strong>Temporary File Storage:</strong> The tool may temporarily
             store your uploaded files for the purpose of conversion. However,
             reputable online tools usually have measures in place to ensure the
             secure handling and deletion of your files after a certain period.
-            Check the tool's privacy policy or terms of service to understand
-            their data handling practices.
+            Check the tool&apos; s privacy policy or terms of service to
+            understand their data handling practices.
           </span>
         </p>
       </article>

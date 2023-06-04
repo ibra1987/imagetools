@@ -17,8 +17,15 @@ function Article({ slug }: { slug: string }) {
         <h2 className="w-full text-left font-medium text-2xl my-6">
           {p1?.title}
         </h2>
-        {p1?.paragraphs.map((p) => {
-          return <p className=" indent-3 leading-6 my-6">{p.body}</p>;
+        {p1?.paragraphs.map((p, index) => {
+          return (
+            <p
+              key={`${p.body[0]}-${index}`}
+              className=" indent-3 leading-6 my-6"
+            >
+              {p.body}
+            </p>
+          );
         })}
       </div>
       <div className="w-full flex justify-center">
@@ -39,8 +46,15 @@ function Article({ slug }: { slug: string }) {
         <h2 className="w-full text-left font-medium text-2xl my-6">
           {p2?.title}
         </h2>
-        {p2?.paragraphs.map((p) => {
-          return <p className=" indent-3 leading-6 my-6">{p.body}</p>;
+        {p2?.paragraphs.map((p, index) => {
+          return (
+            <p
+              key={`${p.body[0]}-${p.body[1]}-${index}`}
+              className=" indent-3 leading-6 my-6"
+            >
+              {p.body}
+            </p>
+          );
         })}
       </div>
     </div>

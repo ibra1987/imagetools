@@ -41,11 +41,15 @@ export default async function Page({ params }: { params: { slug: string } }) {
           Convert your {originalFormat.toUpperCase()} images to{" "}
           {targetFormat.toUpperCase()} format effortlessly using this free
           online tool. Unlike other services,
-          <span className="border-b-4 border-gray-500 font-bold">
+          <span
+            className="border-b-4 
+          
+          border-gray-500 font-bold"
+          >
             {" "}
             No regsitration or paid sucription needed
           </span>
-          , ensuring a hassle-free conversion experience.
+          L , ensuring a hassle-free conversion experience.
         </p>
         <Upload
           tool={"img-converter"}

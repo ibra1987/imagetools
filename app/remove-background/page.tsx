@@ -50,8 +50,8 @@ export default async function Page() {
             <p className="indent-6">
               Designed with ease of use in mind, our tool features a
               user-friendly interface that makes background removal a breeze.
-              You don't need any technical expertise to navigate through the
-              tool's options. Simply upload your image, and with intuitive
+              You don&apos; t need any technical expertise to navigate through
+              the tool's options. Simply upload your image, and with intuitive
               controls, you can refine the selection if needed and achieve a
               flawless background removal result. Save time and effort in your
               design projects.
@@ -72,9 +72,9 @@ export default async function Page() {
             </h3>
             <p className="indent-6">
               Search engine optimization (SEO) is vital for boosting your
-              website's visibility. Our tool contributes to your SEO efforts by
-              providing background-removed images that are optimized for web
-              usage. By eliminating unnecessary background elements, the
+              website&apos; s visibility. Our tool contributes to your SEO
+              efforts by providing background-removed images that are optimized
+              for web usage. By eliminating unnecessary background elements, the
               resulting images have smaller file sizes, leading to faster page
               load times. This, in turn, improves user experience and can
               positively impact your search engine rankings.
