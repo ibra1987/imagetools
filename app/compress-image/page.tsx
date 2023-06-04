@@ -91,8 +91,8 @@ export default async function Page() {
             <div>
               <p className="my-2">
                 We prioritize the safety and privacy of our users files when
-                using our image compression tool. Here's how we ensure a secure
-                experience:
+                using our image compression tool. Here&apos; s how we ensure a
+                secure experience:
               </p>
               <div>
                 <ul className=" list-disc">

@@ -51,10 +51,10 @@ export default async function Page() {
               Designed with ease of use in mind, our tool features a
               user-friendly interface that makes background removal a breeze.
               You don&apos; t need any technical expertise to navigate through
-              the tool's options. Simply upload your image, and with intuitive
-              controls, you can refine the selection if needed and achieve a
-              flawless background removal result. Save time and effort in your
-              design projects.
+              the tool&apos; s options. Simply upload your image, and with
+              intuitive controls, you can refine the selection if needed and
+              achieve a flawless background removal result. Save time and effort
+              in your design projects.
             </p>
             <h3 className="w-full text-left font-medium text-2xl  p-2">
               Swift Processing for Quick Results
@@ -62,8 +62,8 @@ export default async function Page() {
             <p className="m-2 indent-6">
               We understand that time is of the essence. Our image background
               removal tool is built for speed, ensuring quick processing without
-              compromising on accuracy. Whether you're working on a single image
-              or a batch of images, our tool will swiftly remove the
+              compromising on accuracy. Whether you&apos; re working on a single
+              image or a batch of images, our tool will swiftly remove the
               backgrounds, allowing you to move forward with your creative
               projects promptly.
             </p>
