@@ -8,10 +8,10 @@ function page() {
         Terms of Service:
       </h2>
       <p className="m-1">
-        Welcome to imagebgremover.io! These Terms of Service ("Terms") govern
-        your use of our website and its associated services (collectively
-        referred to as the "Service").
-      </p>{" "}
+        Welcome to imagebgremover.io! These Terms of Service (&quot;Terms&quot;)
+        govern your use of our website and its associated services (collectively
+        referred to as the &quot;Service&quot;).
+      </p>
       <p className="m-1">
         By accessing or using the Service, you agree to be bound by these Terms.
         If you do not agree to these Terms, please refrain from using our
@@ -73,9 +73,9 @@ function page() {
       <h3 className="text-xl w-full text-left">Disclaimer of Warranty:</h3>
       <ul>
         <li className="p-2">
-          a. The Service is provided on an "as is" and "as available" basis.
-          imagebgremover.io does not guarantee that the Service will be
-          error-free, uninterrupted, or completely secure.
+          a. The Service is provided on an &quot;as is&quot; and &quot;as
+          available&quot; basis. imagebgremover.io does not guarantee that the
+          Service will be error-free, uninterrupted, or completely secure.
         </li>
         <li className="p-2">
           b. We do not warrant the accuracy, completeness, or reliability of any

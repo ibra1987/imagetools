@@ -6,15 +6,14 @@ function page() {
         At imagebgremover.io, we are committed to protecting your privacy. This
         Privacy Policy explains how we collect, use, and safeguard your personal
         information when you use our website and services.
-      </p>{" "}
+      </p>
       <span className="w-full text-left font-bold m-1">
         By using imagebgremover.io, you consent to the practices described in
         this Privacy Policy.
-      </span>{" "}
+      </span>
       <h3 className="text-2xl w-full text-left m-1">Information We Collect:</h3>
       <ul>
         <li>
-          {" "}
           a. Personal Information: We do not collect any personally identifiable
           information from you. No registration or email address is required to
           use our Service.
@@ -92,8 +91,8 @@ function page() {
       <ul>
         <li>
           a. We reserve the right to update or modify this Privacy Policy at any
-          time. Any changes will be posted on this page with a revised "Last
-          Updated" date.
+          time. Any changes will be posted on this page with a revised
+          &quot;Last Updated&quot; date.
         </li>
         <li>
           b. Your continued use of the Service after any modifications to the
