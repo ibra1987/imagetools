@@ -11,9 +11,9 @@ type props = {
 function SingleTool({ title, imagePath, text, alt }: props) {
   return (
     <section className="w-full flex  justify-center items-center py-10 bg-gray-50 ">
-      <div className="w-11/12   flex  justify-center items-center">
-        <div className="w-1/2 flex flex-col justify-center   items-center p-2 ">
-          <h3 className="text-center text-gray-500 font-extrabold border-b border-gray-300   text-xl md:text-2xl">
+      <div className="w-11/12   flex flex-col-reverse md:flex-row  justify-center items-center space-y-10">
+        <div className="w-full md:w-1/2 flex flex-col justify-center   items-center p-2 ">
+          <h3 className="text-center text-gray-500 font-extrabold border-gray-300   text-xl md:text-2xl">
             {title}
           </h3>
           <p className="w-11/12  my-2 p-4 text-center font-medium  text-gray-500  ">
@@ -23,7 +23,7 @@ function SingleTool({ title, imagePath, text, alt }: props) {
             Try it
           </button>
         </div>
-        <div className="w-1/2 flex flex-col justify-center items-center p-2">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-2">
           <div className="w-11/12  flex flex-col space-y-6 md:space-y-0 md:flex-row  justify-center items-center relative rounded">
             <div className="w-80 h-80 relative rounded bg-transparent-image  ">
               <Image

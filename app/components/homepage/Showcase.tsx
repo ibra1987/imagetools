@@ -22,14 +22,14 @@ function Showcase() {
             today and take your images to the next level.
           </p>
         </li>
-        <li className="w-full  h-48 flex flex-col justify-center     items-center space-x-4 text-red-400 font-medium ">
+        <li className="w-full  h-48 flex flex-col justify-center   my-10  items-center space-x-4 text-red-400 font-medium ">
           <div className="flex justify-center items-center">
             <span className="p-4 bg-red-100 rounded mx-4">
               <BiImages className="text-xl" />
             </span>
             <span>Size Compression</span>
           </div>
-          <p className="w-11/12 h-48 my-6 indent-3 text-slate-400 font-normal text-sm">
+          <p className="w-11/12 h-48 my-6 indent-3 text-slate-400 font-normal text-sm ">
             Easily compress your images with our reliable and fast tool that
             reduces file sizes without sacrificing quality. Our advanced
             compression algorithms ensure your images remain sharp and clear,
