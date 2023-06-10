@@ -1,19 +1,40 @@
 import { AiOutlineWarning } from "react-icons/ai";
 import Upload from "../components/reusables/core-functionality/Upload";
 import SideBar from "./components/SideBar";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Free Image Size Compressiol Tool",
+  description:
+    "Optimize Image Size for Improved Performance with Our Free Image Compression Tool - Enhance Website Speed and User Experience. Effortlessly Compress and Resize Images while Maintaining High Quality. Experience it Now!",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+    },
+  },
+};
 export default async function Page() {
   const relatedTools = ["convert images", "remove background"];
   const liClass = "m-2";
   return (
     <>
-      <h1 className="my-10 text-3xl font-extrabold ">Compress Image size</h1>
+      <h1 className="mt-10 mb-4 text-3xl font-extrabold ">
+        Compress Image size
+      </h1>
+      <p className="w-11/12 md:w-3/5 text-sm mx-auto">
+        Optimize Image Size for Improved Performance with Our Free Image
+        Compression Tool - Enhance Website Speed and User Experience.
+        Effortlessly Compress and Resize Images while Maintaining High Quality.
+      </p>
       <Upload tool={"img-compressor"} />
       <div className="relative w-full flex  flex-col space-x-2  justify-start items-center ">
         <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
-          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center  md:border-r ">
-            <h2 className="w-full text-left text-3xl md:text-5xl font-extrabold p-4 bg-indigo-500 text-white uppercase">
-              Compress Image size
+          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center bg-white  md:border-r ">
+            <h2 className="w-full text-left text-3xl font-extrabold p-4  text-gray-600 ">
+              How To Use Image Our Free Image Size Compression Tool
             </h2>
             <h3 className="w-full text-left font-medium text-2xl my-4 p-2">
               How To Compress images:

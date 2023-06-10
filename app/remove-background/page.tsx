@@ -1,14 +1,34 @@
 import { AiOutlineWarning } from "react-icons/ai";
 import Upload from "../components/reusables/core-functionality/Upload";
 import SideBar from "./components/SideBar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Free Image Background Removal Tool",
+  description:
+    "Remove Backgrounds from Images with Our FreeImage Background Remover Tool - Create Stunning Visuals with Ease! Get Professional Results, Save Time, and Enhance Your Projects.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+    },
+  },
+};
 
 export default async function Page() {
   const relatedTools = ["compress-image", "convert-image"];
   return (
     <>
-      <h1 className="my-10 text-3xl font-extrabold ">
+      <h1 className="mt-10 mb-4 text-3xl font-extrabold ">
         Remove Image Background
       </h1>
+      <p className="w-11/12 md:w-3/5 text-sm mx-auto">
+        Remove Backgrounds from Images with Our Advanced Image Background
+        Remover Tool - Create Stunning Visuals with Ease! Get Professional
+        Results, Save Time, and Enhance Your Projects.
+      </p>
       <Upload tool={"bg-remover"} />
       <div className="relative w-full flex  flex-col space-x-2  justify-start items-center ">
         <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">

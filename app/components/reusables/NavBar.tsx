@@ -11,9 +11,8 @@ function NavBar() {
   };
   const pathname = usePathname();
   const linkClass =
-    "  p-4 hover:border-b-yellow-500  hover:text-yellow-500 border-b border-b-white transition delay-75 ease-in-out";
-  const activeClass =
-    " border-b-yellow-500 text-yellow-500  transition delay-75 ease-in-out";
+    "  p-2 hover:border-b-gray-200 m-1   m-2 border-b border-b-white transition delay-75 ease-in-out";
+  const activeClass = " border-b-gray-200 m-1  transition delay-75 ease-in-out";
   return (
     <nav className="w-1/2 md:w-2/3  flex justify-end items-center relative z-10">
       <ul className={"hidden  md:flex w-full justify-end items-center  "}>

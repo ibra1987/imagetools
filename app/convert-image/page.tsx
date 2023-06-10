@@ -1,14 +1,35 @@
 import ConvertOptions from "./components/ConvertOptions";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Free Image Conversion Tool",
+  description:
+    "Convert Images to Any Format with Our Efficient Image Converter Tool - Seamlessly Transform Your Graphics for Web, Print, and More. Experience Easy Conversion, Versatility, and High-Quality Results. Try it Today!",
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+    },
+  },
+};
 const liClass = " m-2 ";
 const h2Class = " w-full text-left text-3xl font-extrabold my-6  ";
 
 const page = () => {
   return (
     <div className="w-11/12  flex flex-col justify-start items-center py-20 ">
-      <h1 className="w-full text-center text-3xl  font-extrabold md:text-4xl">
+      <h1 className="w-full text-center text-3xl mb-4  font-extrabold md:text-4xl">
         Convert Images In Multiple Format for Free
       </h1>
+      <p className="w-11/12 md:w-3/5 text-sm mx-auto ">
+        Convert Images to Multiple Formats with Our Efficient Image Converter
+        Tool - Seamlessly Transform Your Graphics for Web, Print, and More.
+        Experience Easy Conversion, Versatility, and High-Quality Results.
+      </p>
+      <p className="w-11/12 md:w-3/5 text-sm mx-auto"></p>
       <ConvertOptions />
       <article>
         <h2 className={h2Class}>How to convert </h2>
