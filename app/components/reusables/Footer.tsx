@@ -24,11 +24,9 @@ function Footer() {
         </ul>
         <ul className="w-full flex flex-col justify-start items-center ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
-            Contact and Usage
+            Terms and Services
           </h3>
-          <li className={liClass}>
-            <Link href={"/contact"}>Contact us</Link>
-          </li>
+
           <li className={liClass}>
             <Link href={"/terms-of-use"}>terms of use</Link>{" "}
           </li>
@@ -37,6 +35,17 @@ function Footer() {
           </li>
           <li className={liClass}>
             <Link href={"/cookies-policy"}>Cookies policy</Link>{" "}
+          </li>
+        </ul>
+        <ul className="w-full flex flex-col justify-start items-center ">
+          <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
+            About us
+          </h3>
+          <li className={liClass}>
+            <Link href={"/about"}>About</Link>
+          </li>
+          <li className={liClass}>
+            <Link href={"/contact"}>Contact us</Link>
           </li>
         </ul>
       </div>
