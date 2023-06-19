@@ -131,7 +131,7 @@ function Upload({
       if (response.data.success === "ok") {
         appState.setLoading(false);
         setDownloadLink(response.data.link);
-        appState.setUploadedImages([]);
+        
       }
     } catch (error: any) {
       appState.setLoading(false);
