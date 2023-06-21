@@ -16,11 +16,8 @@ export async function POST(request: Request) {
   const timestamp = new Date().getTime();
   try {
     const response = await axios.post(
-<<<<<<< HEAD
       process.env.BASE_URL + "/pythonapi/api/compress-image",
-=======
-      process.env.BASE_URL + "/pythonapi/api/remove-background",
->>>>>>> 1f1f4f257f8a38979392ef18085aced7ec480f00
+
       formdata,
       {
         headers: {
@@ -56,8 +53,7 @@ export async function POST(request: Request) {
           "./public/bgRemoved/" + timestamp + "-" + imagesData[0].filename,
           buffer
         );
-        downloadLink =
-          "/bgRemoved/" + timestamp + "-" + imagesData[0].filename;
+        downloadLink = "/bgRemoved/" + timestamp + "-" + imagesData[0].filename;
       }
       // const filenames = imagesData.map(
       //   (piece: data) => timestamp + "-" + piece.filename
@@ -103,4 +99,3 @@ export async function POST(request: Request) {
     );
   }
 }
-
