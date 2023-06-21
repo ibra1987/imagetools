@@ -56,7 +56,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           targetFormat={targetFormat}
           originalFormat={originalFormat}
         />
-        <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
+        <div className="relative w-10/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
           <article className="bg-white w-full md:w-4/5 flex flex-col justify-start items-center  md:border-r ">
             <h2 className="w-full text-left text-3xl md:text-5xl font-extrabold p-4 bg-indigo-500 text-white uppercase">
               {" "}

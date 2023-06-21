@@ -2,11 +2,12 @@ import Image from "next/image";
 
 function Logo() {
   return (
-    <div className="w-40 h-20 relative">
+    <div className="relative">
       <Image
-        src={"/assets/transparent-logo.png"}
+        src={"/assets/logo-svg.svg"}
         alt="imagebgremover.io"
-        fill={true}
+        width={220}
+        height={150}
       />
     </div>
   );

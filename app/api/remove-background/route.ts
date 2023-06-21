@@ -1,5 +1,6 @@
 import axios from "axios";
 import { NextResponse } from "next/server";
+import fs from "fs";
 
 import { v4 as uuidv4 } from "uuid";
 import AdmZip from "adm-zip";
@@ -15,7 +16,7 @@ export async function POST(request: Request) {
   const timestamp = new Date().getTime();
   try {
     const response = await axios.post(
-      process.env.BASE_URL + "/api/remove-background",
+      process.env.BASE_URL + "/pythonapi/api/remove-background",
       formdata,
       {
         headers: {
@@ -25,24 +26,34 @@ export async function POST(request: Request) {
     );
 
     if (response.data.success === "ok") {
-      const uuid = uuidv4();
-      const zip = new AdmZip();
+      let downloadLink;
       const imagesData: data[] = response.data.data;
-      // const bufferArray = imagesData.map((piece: data) => {
-      //   return Buffer.from(piece.base64, "base64");
-      // });
 
-      imagesData.map(async (piece: data) => {
-        await zip.addFile(
-          timestamp + "-" + piece.filename,
-          Buffer.from(piece.base64, "base64")
+      if (response.data.data.length > 1) {
+        const uuid = uuidv4();
+        const zip = new AdmZip();
+        // const bufferArray = imagesData.map((piece: data) => {
+        //   return Buffer.from(piece.base64, "base64");
+        // });
+
+        imagesData.map(async (piece: data) => {
+          await zip.addFile(
+            timestamp + "-" + piece.filename,
+            Buffer.from(piece.base64, "base64")
+          );
+        });
+        const path = `./public/bgRemoved/${uuid}-${timestamp}.zip`;
+        downloadLink = `/bgRemoved/${uuid}-${timestamp}.zip`;
+
+        zip.writeZip(path);
+      } else {
+        const buffer = Buffer.from(imagesData[0].base64, "base64");
+        await fs.promises.writeFile(
+          "./public/bgRemoved/" + timestamp + "-" + imagesData[0].filename,
+          buffer
         );
-      });
-      const path = `./public/bgRemoved/${uuid}-${timestamp}.zip`;
-      const downloadLink = `/bgRemoved/${uuid}-${timestamp}.zip`;
-
-      await zip.writeZip(path);
-
+        downloadLink = "/bgRemoved/" + timestamp + "-" + imagesData[0].filename;
+      }
       // const filenames = imagesData.map(
       //   (piece: data) => timestamp + "-" + piece.filename
       // );

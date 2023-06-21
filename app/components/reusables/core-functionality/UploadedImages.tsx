@@ -49,7 +49,7 @@ function UploadedImages({
             <ScaleLoader loading={loading} color="#555555" />
           </div>
         )}
-        {downloadLink !== "" && (
+        {downloadLink && (
           <a
             className="w-full flex justify-center items-center space-x-2 bg-blue-400 p-2 my-2 font-medium hover:bg-blue-500 text-gray-100 transition delay-75 ease-in-out cursor-pointer"
             href={downloadLink}

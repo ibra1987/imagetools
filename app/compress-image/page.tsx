@@ -30,7 +30,7 @@ export default async function Page() {
         Effortlessly Compress and Resize Images while Maintaining High Quality.
       </p>
       <Upload tool={"img-compressor"} />
-      <div className="relative w-full flex  flex-col space-x-2  justify-start items-center ">
+      <div className="relative w-11/12 flex  flex-col space-x-2  justify-start items-center ">
         <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
           <article className=" w-full md:w-4/5 flex flex-col justify-start items-center bg-white  md:border-r ">
             <h2 className="w-full text-left text-3xl font-extrabold p-4  text-gray-600 ">

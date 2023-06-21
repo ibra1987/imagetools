@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={"poppins"}>
         <main className="w-full bg-gray-50 relative text-gray-500  mx-auto flex flex-col justify-between items-center min-h-screen  ">
           <Header />
-          <div className="mt-16 w-full flex flex-col justify-start items-center bg-inherit">
+          <div className="mt-16 w-full mx-auto flex flex-col justify-start items-center bg-inherit">
             {children}
           </div>
           <Footer />

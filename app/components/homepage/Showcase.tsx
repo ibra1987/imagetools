@@ -5,16 +5,16 @@ import { MdOutlineFilterBAndW } from "react-icons/md";
 
 function Showcase() {
   return (
-    <div className="w-full z-10 p-10 bg-transparent   flex flex-col justify-start items-center rounded bg-white   ">
+    <div className="w-full z-10 p-10 bg-transparent   flex flex-col text-slate-500 justify-start items-center rounded bg-white   ">
       <ul className="w-full   grid grid-cols-1 place-items-center   md:grid-cols-3 p-4 ">
-        <li className="w-full h-48  flex flex-col justify-center     items-center space-x-4 text-indigo-400 font-medium ">
-          <div className="flex justify-center items-center">
-            <span className="p-4 bg-indigo-50 rounded mx-4">
+        <li className="w-full h-48  flex flex-col justify-center     items-center space-x-4  font-medium ">
+          <div className="flex justify-center items-center text-indigo-400">
+            <span className="p-4 bg-indigo-50  rounded mx-4">
               <BsImageFill />
             </span>
             <span>Background Removal</span>
           </div>
-          <p className="w-11/12 h-60 py-4  indent-3  text-slate-400 font-normal text-sm">
+          <p className="w-11/12 h-60 py-4  indent-3   font-normal text-sm">
             Remove image backgrounds effortlessly with our powerful tool. Our
             background removal tool provides accurate results in just a few
             clicks, making it perfect for photographers, designers, and anyone
@@ -22,28 +22,28 @@ function Showcase() {
             today and take your images to the next level.
           </p>
         </li>
-        <li className="w-full  h-48 flex flex-col justify-center   my-10  items-center space-x-4 text-red-400 font-medium ">
-          <div className="flex justify-center items-center">
+        <li className="w-full  h-48 flex flex-col justify-center   my-10  items-center space-x-4  font-medium ">
+          <div className="flex justify-center items-center text-red-400">
             <span className="p-4 bg-red-100 rounded mx-4">
               <BiImages className="text-xl" />
             </span>
             <span>Size Compression</span>
           </div>
-          <p className="w-11/12 h-48 my-6 indent-3 text-slate-400 font-normal text-sm ">
+          <p className="w-11/12 h-48 my-6 indent-3  font-normal text-sm ">
             Easily compress your images with our reliable and fast tool that
             reduces file sizes without sacrificing quality. Our advanced
             compression algorithms ensure your images remain sharp and clear,
             making them perfect for websites, presentations, or personal use.
           </p>
         </li>
-        <li className="w-full h-48 flex flex-col justify-center      items-center space-x-4 text-yellow-600 font-medium ">
-          <div className="flex justify-center items-center">
+        <li className="w-full h-48 flex flex-col justify-center      items-center space-x-4 font-medium ">
+          <div className="flex justify-center items-center text-yellow-600 ">
             <span className="p-4 bg-yellow-100 rounded mx-4">
               <IoIosImages className="text-xl" />
             </span>
             <span>Format Conversion</span>
           </div>
-          <p className="w-11/12 h-48 my-6 indent-3 text-slate-400 font-normal text-sm">
+          <p className="w-11/12 h-48 my-6 indent-3  font-normal text-sm">
             fast and user-friendly tool that lets you easily convert your images
             to different file formats. With just a few clicks, you can quickly
             convert multiple images to the format of your choice.
@@ -56,7 +56,7 @@ function Showcase() {
             </span>
             <span>Filter Application</span>
           </div>
-          <p className="w-11/12 my-6 indent-3 text-slate-400 font-normal text-sm">
+          <p className="w-11/12 my-6 indent-3  font-normal text-sm">
             "Transform your images into stunning works of art with our powerful
             image filters tool. Our tool provides a wide range of filters and
             effects to choose from, allowing you to add a personal touch to your

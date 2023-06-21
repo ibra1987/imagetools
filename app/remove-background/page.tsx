@@ -30,11 +30,11 @@ export default async function Page() {
         Results, Save Time, and Enhance Your Projects.
       </p>
       <Upload tool={"bg-remover"} />
-      <div className="relative w-full flex  flex-col space-x-2  justify-start items-center ">
+      <div className="relative w-11/12 flex  flex-col space-x-2  justify-start items-center ">
         <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
           <article className=" w-full md:w-4/5 flex flex-col justify-start items-center  md:border-r ">
-            <h2 className="w-full text-left text-3xl md:text-5xl  font-extrabold p-4 bg-indigo-500 text-white mb-4 uppercase">
-              Remove Backgrounds from ANY Image for free
+            <h2 className="w-full text-left text-3xl md:text-5xl  font-extrabold p-4  text-gray-700 mb-4 ">
+              Remove Background from any Image for free
             </h2>
             <p className="m-2">
               Discover the convenience of our free image background removal tool

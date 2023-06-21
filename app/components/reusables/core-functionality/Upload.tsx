@@ -131,7 +131,6 @@ function Upload({
       if (response.data.success === "ok") {
         appState.setLoading(false);
         setDownloadLink(response.data.link);
-        appState.setUploadedImages([]);
       }
     } catch (error: any) {
       appState.setLoading(false);
@@ -200,7 +199,7 @@ function Upload({
     }
   };
   return (
-    <div className="w-11/12 my-4 pb-20">
+    <div className="w-10/12 my-4 pb-20">
       <Notification
         error={appState.error}
         success={appState.success}
@@ -210,7 +209,7 @@ function Upload({
 
       <UploadForm onChange={onChange} len={appState.uploadedImages?.length} />
       {tool === "img-compressor" && (
-        <div className="w-11/12 md:w-2/5 mx-auto my-4 p-2 bg-blue-50 space-x-4 flex justify-evenly items-center">
+        <div className="w-11/12 md:w-2/5 mx-auto my-4 p-2  space-x-4 flex justify-evenly items-center">
           <label htmlFor="quality">Quality:</label>
           <input
             type="range"

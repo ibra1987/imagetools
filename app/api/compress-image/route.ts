@@ -15,7 +15,7 @@ export async function POST(request: Request) {
   const timestamp = new Date().getTime();
   try {
     const response = await axios.post(
-      process.env.BASE_URL + "/api/compress-image",
+      process.env.BASE_URL + "/pythonapi/api/compress-image",
       formdata,
       {
         headers: {

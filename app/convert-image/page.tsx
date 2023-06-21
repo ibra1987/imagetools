@@ -20,7 +20,7 @@ const h2Class = " w-full text-left text-3xl font-extrabold my-6  ";
 
 const page = () => {
   return (
-    <div className="w-11/12  flex flex-col justify-start items-center py-20 ">
+    <div className="w-10/12  flex flex-col justify-start items-center py-20 ">
       <h1 className="w-full text-center text-3xl mb-4  font-extrabold md:text-4xl">
         Convert Images In Multiple Format for Free
       </h1>

@@ -23,13 +23,17 @@ const selectOptions = [
 ];
 function ConvertOptions() {
   const [fromTo, setFromTo] = useState({
-    from: "PNG",
-    to: "JPG",
+    from: "JPG",
+    to: "PNG",
   });
-  const convertToOptions = selectOptions?.filter((opt) => opt !== fromTo.from);
+  let convertToOptions = selectOptions?.filter((opt) => opt !== fromTo.from);
 
   const onChange = (e: React.SyntheticEvent<HTMLSelectElement>) => {
     if (e.currentTarget.name === "from") {
+      convertToOptions = selectOptions?.filter(
+        (opt) => opt !== e.currentTarget.value
+      );
+
       setFromTo({
         from: e.currentTarget.value,
         to: convertToOptions[0],
