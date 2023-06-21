@@ -131,6 +131,10 @@ function Upload({
       if (response.data.success === "ok") {
         appState.setLoading(false);
         setDownloadLink(response.data.link);
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 1f1f4f257f8a38979392ef18085aced7ec480f00
       }
     } catch (error: any) {
       appState.setLoading(false);

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { NextResponse } from "next/server";
 import fs from "fs";
+
 import { v4 as uuidv4 } from "uuid";
 import AdmZip from "adm-zip";
 
@@ -15,7 +16,11 @@ export async function POST(request: Request) {
   const timestamp = new Date().getTime();
   try {
     const response = await axios.post(
+<<<<<<< HEAD
       process.env.BASE_URL + "/pythonapi/api/compress-image",
+=======
+      process.env.BASE_URL + "/pythonapi/api/remove-background",
+>>>>>>> 1f1f4f257f8a38979392ef18085aced7ec480f00
       formdata,
       {
         headers: {
@@ -41,18 +46,18 @@ export async function POST(request: Request) {
             Buffer.from(piece.base64, "base64")
           );
         });
-        const path = `./public/compressed/${uuid}-${timestamp}.zip`;
-        downloadLink = `/compressed/${uuid}-${timestamp}.zip`;
+        const path = `./public/bgRemoved/${uuid}-${timestamp}.zip`;
+        downloadLink = `/bgRemoved/${uuid}-${timestamp}.zip`;
 
         zip.writeZip(path);
       } else {
         const buffer = Buffer.from(imagesData[0].base64, "base64");
         await fs.promises.writeFile(
-          "./public/compressed/" + timestamp + "-" + imagesData[0].filename,
+          "./public/bgRemoved/" + timestamp + "-" + imagesData[0].filename,
           buffer
         );
         downloadLink =
-          "/compressed/" + timestamp + "-" + imagesData[0].filename;
+          "/bgRemoved/" + timestamp + "-" + imagesData[0].filename;
       }
       // const filenames = imagesData.map(
       //   (piece: data) => timestamp + "-" + piece.filename
@@ -98,3 +103,4 @@ export async function POST(request: Request) {
     );
   }
 }
+
