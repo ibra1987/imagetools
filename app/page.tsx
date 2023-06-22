@@ -5,7 +5,22 @@ import Hero from "./components/homepage/Hero";
 import ImageConversion from "./components/homepage/ImageConversion";
 import Showcase from "./components/homepage/Showcase";
 import SingleTool from "./components/homepage/SingleTool";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title:
+    "Free image tools, Background Removal, image compression, image conversion, text extraction",
+  description:
+    " Our Versatile Image Toolbox for Background Removal, Compression, and Conversion. Simplify your workflow with powerful tools to remove backgrounds, compress images, and convert formats seamlessly. Elevate your website's performance and captivate users with stunning visuals using our intuitive image solutions.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+    },
+  },
+};
 export default function Home() {
   return (
     <>
