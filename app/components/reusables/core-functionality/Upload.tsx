@@ -5,6 +5,8 @@ import UploadForm from "./UploadForm";
 import UploadedImages from "./UploadedImages";
 import axios from "axios";
 import Notification from "../Notification";
+import Image from "next/image";
+import Link from "next/link";
 // export const imageFormats = [
 //   "PNG",
 //   "JPG",
@@ -236,23 +238,39 @@ function Upload({
         </div>
       )} */}
       {appState.uploadedImages && appState.uploadedImages.length > 0 && (
-        <UploadedImages
-          cancel={cancel}
-          tool={tool}
-          downloadLink={downloadLink}
-          images={appState.uploadedImages}
-          removeImage={removeImage}
-          loading={appState.loading}
-          submit={
-            tool === "bg-remover"
-              ? requestBgRemover
-              : tool === "img-compressor"
-              ? requestImgCompressor
-              : tool === "img-converter"
-              ? requestImgConverter
-              : () => {}
-          }
-        />
+        <>
+          <UploadedImages
+            cancel={cancel}
+            tool={tool}
+            downloadLink={downloadLink}
+            images={appState.uploadedImages}
+            removeImage={removeImage}
+            loading={appState.loading}
+            submit={
+              tool === "bg-remover"
+                ? requestBgRemover
+                : tool === "img-compressor"
+                ? requestImgCompressor
+                : tool === "img-converter"
+                ? requestImgConverter
+                : () => {}
+            }
+          />
+          <div className="m-4 w-full">
+            <Link
+              href={
+                "https://afflat3e1.com/lnk.asp?o=11299&c=918277&a=236088&k=E04B43957FB7E3B7D96DB27014668058&l=11383"
+              }
+            >
+              <Image
+                alt="nitendo_switch"
+                src={"/adBanners/nintendo_switch_mxbnty.gif"}
+                width={728}
+                height={90}
+              />
+            </Link>
+          </div>
+        </>
       )}
     </div>
   );

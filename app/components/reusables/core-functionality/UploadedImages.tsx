@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsArrowBarDown } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
 import { ScaleLoader } from "react-spinners";

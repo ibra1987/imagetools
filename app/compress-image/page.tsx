@@ -2,6 +2,8 @@ import { AiOutlineWarning } from "react-icons/ai";
 import Upload from "../components/reusables/core-functionality/Upload";
 import SideBar from "./components/SideBar";
 import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Free Image Size Compressiol Tool",
@@ -55,6 +57,7 @@ export default async function Page() {
                 </li>
               </ol>
             </div>
+
             <div className="p-2">
               <h3 className="w-full text-left font-medium text-2xl my-4 p-2">
                 Is the image compression tool free of charge?
@@ -106,6 +109,7 @@ export default async function Page() {
                 </p>
               </div>
             </div>
+
             <h3 className="w-full text-left font-medium text-2xl my-4 p-2">
               Is the image compression tool safe to use?
             </h3>

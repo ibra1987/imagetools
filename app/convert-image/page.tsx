@@ -1,5 +1,7 @@
+import Image from "next/image";
 import ConvertOptions from "./components/ConvertOptions";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Free Image Conversion Tool",
@@ -31,6 +33,20 @@ const page = () => {
       </p>
       <p className="w-11/12 md:w-3/5 text-sm mx-auto"></p>
       <ConvertOptions />
+      <div className="m-4 w-full flex justify-center">
+        <Link
+          href={
+            "https://afflat3e1.com/lnk.asp?o=11299&c=918277&a=236088&k=E04B43957FB7E3B7D96DB27014668058&l=11383"
+          }
+        >
+          <Image
+            alt="nitendo_switch"
+            src={"/adBanners/nintendo_switch_mxbnty.gif"}
+            width={728}
+            height={90}
+          />
+        </Link>
+      </div>
       <article>
         <h2 className={h2Class}>How to convert </h2>
         <div>

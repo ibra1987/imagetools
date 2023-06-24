@@ -6,8 +6,22 @@ function SideBar({ relatedTools }: { relatedTools: string[] }) {
   relatedTools.length === 0 && <></>;
   return (
     <aside className="w-full md:w-1/5 bg-white  ">
+      <div>
+        <Link
+          href={
+            "https://afflat3e1.com/lnk.asp?o=9643&c=918277&a=236088&k=16CF1DBEAFF936C2AC6FE6FAD107F935&l=9216"
+          }
+        >
+          <Image
+            alt="gift_card"
+            src={"/adBanners/gift_card_mxbnty.gif"}
+            width={300}
+            height={250}
+          />
+        </Link>
+      </div>
       {relatedTools.length > 0 && (
-        <h3 className="p-2 bg-red-400 text-gray-100">
+        <h3 className="p-2 bg-red-400 text-gray-100 my-4">
           Other Related Conversions
         </h3>
       )}
