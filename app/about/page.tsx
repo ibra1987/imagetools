@@ -22,7 +22,7 @@ With no formal education in computer science or programming, I embarked on a sel
 <p className={pClass}>
 Passion for Coding and Web Development:
 
-Coding has become more than just a skillset; it's an integral part of my life now. The ability to craft lines of code and watch them transform into functional and beautiful websites or applications is immensely gratifying. It is this passion that motivates me to continuously improve my craft and stay updated with the latest industry trends and advancements.
+Coding has become more than just a skillset; it&apos;s an integral part of my life now. The ability to craft lines of code and watch them transform into functional and beautiful websites or applications is immensely gratifying. It is this passion that motivates me to continuously improve my craft and stay updated with the latest industry trends and advancements.
 </p>
   </article>;
 }
