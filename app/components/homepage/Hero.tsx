@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Hero() {
   return (
     <div className=" w-full  p-32 flex flex-col justify-center items-center px-10 relative ">
@@ -11,7 +13,7 @@ function Hero() {
         stunning filters, we&apos; ve got you covered.
       </p>
       <h2 className="mt-6 text-center font-medium py-4 bg-indigo-700 text-gray-100 rounded px-10 cursor-pointer hover:bg-indigo-800 transition delay-75 ease-in-out">
-        Choose Your Tool
+       <Link href="/remove-background"> Try our Image Background Removal Tool</Link>
       </h2>
     </div>
   );

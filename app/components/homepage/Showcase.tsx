@@ -1,9 +1,13 @@
 import { BsImageFill } from "react-icons/bs";
 import { BiImages } from "react-icons/bi";
 import { IoIosImages } from "react-icons/io";
-import { MdOutlineFilterBAndW } from "react-icons/md";
+//import { MdOutlineFilterBAndW } from "react-icons/md";
+
+
 
 function Showcase() {
+
+ 
   return (
     <div className="w-full z-10 p-10 bg-transparent   flex flex-col text-slate-400 justify-start items-center rounded bg-gray-700 mt-4  ">
       <ul className="w-full   grid grid-cols-1 place-items-center gap-4 md:divide-x   divide-gray-600   md:grid-cols-3 p-4 ">
