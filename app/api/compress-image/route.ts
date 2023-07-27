@@ -43,17 +43,17 @@ export async function POST(request: Request) {
             Buffer.from(piece.base64, "base64")
           );
         });
-        const path = `./public/bgRemoved/${uuid}-${timestamp}.zip`;
-        downloadLink = `/bgRemoved/${uuid}-${timestamp}.zip`;
+        const path = `./public/bgremoved/${uuid}-${timestamp}.zip`;
+        downloadLink = `/bgremoved/${uuid}-${timestamp}.zip`;
 
         zip.writeZip(path);
       } else {
         const buffer = Buffer.from(imagesData[0].base64, "base64");
         await fs.promises.writeFile(
-          "./public/bgRemoved/" + timestamp + "-" + imagesData[0].filename,
+          "./public/bgremoved/" + timestamp + "-" + imagesData[0].filename,
           buffer
         );
-        downloadLink = "/bgRemoved/" + timestamp + "-" + imagesData[0].filename;
+        downloadLink = "/bgremoved/" + timestamp + "-" + imagesData[0].filename;
       }
       // const filenames = imagesData.map(
       //   (piece: data) => timestamp + "-" + piece.filename
@@ -69,7 +69,7 @@ export async function POST(request: Request) {
       //         | Stream
       //     ) =>
       //       await fs.promises.writeFile(
-      //         "./public/bgRemoved/" + timestamp + "-" + filename,
+      //         "./public/bgremoved/" + timestamp + "-" + filename,
       //         buffer
       //       )
       //   );

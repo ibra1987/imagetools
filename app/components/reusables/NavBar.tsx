@@ -11,11 +11,11 @@ function NavBar() {
   };
   const pathname = usePathname();
   const linkClass =
-    "  p-2 hover:border-b-gray-200 m-1   m-2 border-b border-b-white transition delay-75 ease-in-out";
-  const activeClass = " border-b-gray-200 m-1  transition delay-75 ease-in-out";
+    "  p-2 px-6  hover:bg-gray-300     transition duration-200 rounded hover:text-gray-900  ease-in-out";
+  const activeClass = "p-2 bg-gray-300 text-gray-900  transition  duration-200 ease-in-out";
   return (
     <nav className="w-1/2 md:w-2/3  flex justify-end items-center relative z-10">
-      <ul className={"hidden  md:flex w-full justify-end items-center  "}>
+      <ul className={"hidden  md:flex w-full justify-end items-center space-x-6  "}>
         <li className={pathname === "/" ? linkClass + activeClass : linkClass}>
           <Link href={"/"}>Home</Link>
         </li>

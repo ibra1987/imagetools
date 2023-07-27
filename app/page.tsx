@@ -38,7 +38,7 @@ export default function Home() {
       </div>
 
       <EmailSubscription />
-      <div className="w-10/12 flex flex-col justify-start items-center my-4">
+      <div className="w-11/12 flex flex-col justify-start items-center  my-4">
         <FileCompression />
         <ImageConversion />
         <BackgroundRemoval />

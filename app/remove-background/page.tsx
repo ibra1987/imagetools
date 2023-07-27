@@ -32,8 +32,8 @@ export default async function Page() {
       <Upload tool={"bg-remover"} />
       <div className="relative w-11/12 flex  flex-col space-x-2  justify-start items-center ">
         <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
-          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center  md:border-r ">
-            <h2 className="w-full text-left text-3xl md:text-5xl  font-extrabold p-4  text-gray-700 mb-4 ">
+          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center  md:border-r md:border-r-gray-700 ">
+            <h2 className="w-full text-left text-3xl md:text-4xl  font-extrabold p-4  text-gray-300 mb-4 ">
               Remove Background from any Image for free
             </h2>
             <p className="m-2">
@@ -114,8 +114,8 @@ export default async function Page() {
           <SideBar relatedTools={relatedTools} />
         </div>
       </div>
-      <div className="p-4 w-11/12 text-yellow-800  flex space-x-4 justify-center items-center">
-        <span className="text-yellow-800 text-2xl">
+      <div className="p-4 w-11/12 text-yellow-600  flex space-x-4 justify-center items-center">
+        <span className="text-yellow-600 text-2xl">
           <AiOutlineWarning />
         </span>
         <span></span>All uploaded files are deleted after 30 min.

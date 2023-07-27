@@ -54,7 +54,7 @@ function ConvertOptions() {
       <select
         name="from"
         onChange={onChange}
-        className="w-full md:w-2/5 outline-none border p-2 "
+        className="w-full md:w-2/5 outline-none border p-2 text-gray-900 "
         value={fromTo.from}
       >
         {selectOptions.map((opt, index) => (
@@ -66,7 +66,7 @@ function ConvertOptions() {
         value={fromTo.to}
         name="to"
         onChange={onChange}
-        className="w-full md:w-2/5 outline-none border p-2 "
+        className="w-full md:w-2/5 outline-none border p-2 text-gray-900 "
       >
         {convertToOptions.map((opt, index) => (
           <option key={`${opt}-${index}`}>{opt}</option>
@@ -74,7 +74,7 @@ function ConvertOptions() {
       </select>
       <Link
         href={`/convert-image/${fromTo.from.toLowerCase()}-to-${fromTo.to.toLowerCase()}`}
-        className="w-full md:w-2/5 text-center rounded text-white bg-red-400 font-extrabold hover:bg-red-500 transition delay-75 ease-in-out tracking-wider p-2 outline-none"
+        className="w-full md:w-2/5 text-center rounded text-white bg-red-500 font-extrabold hover:bg-red-600 transition delay-75 ease-in-out tracking-wider p-2 outline-none"
       >
         Proceed
       </Link>

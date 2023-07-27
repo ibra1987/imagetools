@@ -6,7 +6,7 @@ const liClass =
 
 function Footer() {
   return (
-    <footer className="w-full flex justify-center items-center p-4 bg-[#404040] text-gray-400 text-xs md:text-sm">
+    <footer className="w-full flex justify-center items-center p-4 border-t border-gray-600  text-gray-400 text-xs md:text-sm">
       <div className="w-11/12 flex justify-center items-center ">
         <ul className="w-full  flex flex-col justify-start items-center ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">

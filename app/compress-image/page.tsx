@@ -34,8 +34,8 @@ export default async function Page() {
       <Upload tool={"img-compressor"} />
       <div className="relative w-11/12 flex  flex-col space-x-2  justify-start items-center ">
         <div className="relative w-11/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
-          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center bg-white  md:border-r ">
-            <h2 className="w-full text-left text-3xl font-extrabold p-4  text-gray-600 ">
+          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center   md:border-r md:border-r-gray-700">
+            <h2 className="w-full text-left text-3xl font-extrabold p-4  text-gray-300 ">
               How To Use Image Our Free Image Size Compression Tool
             </h2>
             <h3 className="w-full text-left font-medium text-2xl my-4 p-2">
@@ -222,10 +222,10 @@ export default async function Page() {
           </article>
           <SideBar relatedTools={relatedTools} />
         </div>
-        <span className="text-yellow-800 text-2xl">
+        <span className="text-yellow-600 text-2xl">
           <AiOutlineWarning />
         </span>
-        <span className="font-medium "></span>All uploaded files are deleted
+        <span className="font-medium text-yellow-600 "></span>All uploaded files are deleted
         after 30 min.
       </div>
     </>

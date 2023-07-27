@@ -5,9 +5,9 @@ import { MdOutlineFilterBAndW } from "react-icons/md";
 
 function Showcase() {
   return (
-    <div className="w-full z-10 p-10 bg-transparent   flex flex-col text-slate-500 justify-start items-center rounded bg-white   ">
-      <ul className="w-full   grid grid-cols-1 place-items-center   md:grid-cols-3 p-4 ">
-        <li className="w-full h-48  flex flex-col justify-center     items-center space-x-4  font-medium ">
+    <div className="w-full z-10 p-10 bg-transparent   flex flex-col text-slate-400 justify-start items-center rounded bg-gray-700 mt-4  ">
+      <ul className="w-full   grid grid-cols-1 place-items-center gap-4 md:divide-x   divide-gray-600   md:grid-cols-3 p-4 ">
+        <li className="w-full h-48  flex flex-col justify-center  items-center  font-medium ">
           <div className="flex justify-center items-center text-indigo-400">
             <span className="p-4 bg-indigo-50  rounded mx-4">
               <BsImageFill />

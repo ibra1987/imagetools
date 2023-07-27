@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Logo() {
   return (
-    <div className="relative">
+    <div className="relative bg-gray-300 rounded ">
       <Image
         src={"/assets/logo-svg.svg"}
         alt="imagebgremover.io"
