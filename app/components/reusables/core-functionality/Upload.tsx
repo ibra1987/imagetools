@@ -121,7 +121,7 @@ function Upload({
       return;
     }
     appState.uploadedImages.map((image: File) => {
-      formData.append("userImages", image, image.name);
+      formData.append("userImages", image, image.name.split(" ").join(""));
     });
     try {
       const response = await axios.post("/api/remove-background", formData, {
@@ -136,7 +136,7 @@ function Upload({
       }
     } catch (error: any) {
       appState.setLoading(false);
-      console.log(error.message);
+      console.log(error.message, error.stack);
     }
   };
 
@@ -151,7 +151,7 @@ function Upload({
       return;
     }
     appState.uploadedImages.map((image) =>
-      formdata.append("userImages", image, image.name)
+      formdata.append("userImages", image, image.name.split(" ").join(""))
     );
     targetFormat === "JPG" ? (targetFormat = "JPEG") : targetFormat;
 
@@ -180,7 +180,7 @@ function Upload({
     const formdata = new FormData();
     if (appState.uploadedImages && appState.uploadedImages.length > 0) {
       appState.uploadedImages.map((image) =>
-        formdata.append("userImages", image, image.name)
+        formdata.append("userImages", image, image.name.split(" ").join(""))
       );
       formdata.append("quality", quality.toString());
       try {

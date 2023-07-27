@@ -53,25 +53,7 @@ export async function POST(request: Request) {
         );
         downloadLink = "/converted/" + timestamp + "-" + imagesData[0].filename;
       }
-      // const filenames = imagesData.map(
-      //   (piece: data) => timestamp + "-" + piece.filename
-      // );
-      // filenames.map(async (filename: string) => {
-      //   return bufferArray.map(
-      //     async (
-      //       buffer:
-      //         | string
-      //         | NodeJS.ArrayBufferView
-      //         | Iterable<string | NodeJS.ArrayBufferView>
-      //         | AsyncIterable<string | NodeJS.ArrayBufferView>
-      //         | Stream
-      //     ) =>
-      //       await fs.promises.writeFile(
-      //         "./public/bgRemoved/" + timestamp + "-" + filename,
-      //         buffer
-      //       )
-      //   );
-      // });
+
       return NextResponse.json(
         {
           success: "ok",
@@ -90,7 +72,7 @@ export async function POST(request: Request) {
     );
   } catch (error: any) {
     return NextResponse.json(
-      { error: error.message },
+       {_error:error, error: error.message, stack:error.stack },
       {
         status: 500,
       }

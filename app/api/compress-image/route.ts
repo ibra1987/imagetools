@@ -43,37 +43,19 @@ export async function POST(request: Request) {
             Buffer.from(piece.base64, "base64")
           );
         });
-        const path = `./public/bgremoved/${uuid}-${timestamp}.zip`;
-        downloadLink = `/bgremoved/${uuid}-${timestamp}.zip`;
+        const path = `./public/compressed/${uuid}-${timestamp}.zip`;
+        downloadLink = `/compressed/${uuid}-${timestamp}.zip`;
 
         zip.writeZip(path);
       } else {
         const buffer = Buffer.from(imagesData[0].base64, "base64");
         await fs.promises.writeFile(
-          "./public/bgremoved/" + timestamp + "-" + imagesData[0].filename,
+          "./public/compressed/" + timestamp + "-" + imagesData[0].filename,
           buffer
         );
-        downloadLink = "/bgremoved/" + timestamp + "-" + imagesData[0].filename;
+        downloadLink = "/compressed/" + timestamp + "-" + imagesData[0].filename;
       }
-      // const filenames = imagesData.map(
-      //   (piece: data) => timestamp + "-" + piece.filename
-      // );
-      // filenames.map(async (filename: string) => {
-      //   return bufferArray.map(
-      //     async (
-      //       buffer:
-      //         | string
-      //         | NodeJS.ArrayBufferView
-      //         | Iterable<string | NodeJS.ArrayBufferView>
-      //         | AsyncIterable<string | NodeJS.ArrayBufferView>
-      //         | Stream
-      //     ) =>
-      //       await fs.promises.writeFile(
-      //         "./public/bgremoved/" + timestamp + "-" + filename,
-      //         buffer
-      //       )
-      //   );
-      // });
+
       return NextResponse.json(
         {
           success: "ok",
