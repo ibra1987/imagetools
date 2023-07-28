@@ -15,7 +15,7 @@ function FileCompression() {
           Experience lightning-fast loading times and reduced file sizes while
           preserving exceptional quality.
           <br />
-          <Link href={"/conpress-images"}>
+          <Link href={"/compress-image"}>
             <span className="text-yellow-500 mt-4 font-extrabold hover:text-yellow-600 transition delay ease-in-out">
               Compress Your Images Now
               <FaArrowRight className="inline mx-1" />
