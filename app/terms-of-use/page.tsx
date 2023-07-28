@@ -1,3 +1,18 @@
+import {Metadata} from "next";
+
+export const metadata :Metadata = {
+
+  title:"Terms of use- imagebgemover.com",
+  description:"Review our website's terms of use to understand the rules and guidelines governing your interactions with our platform. Our terms of use outline the responsibilities of users, content usage, and legal agreements. Stay informed about your rights and obligations when using our services.",
+  robots: {
+   index: true,
+   follow: true,
+   nocache: false,
+   googleBot: {
+     index: true,
+   },
+ },
+ }
 function page() {
   return (
     <article className="mt-16 w-4/5 flex flex-col justify-start items-center">

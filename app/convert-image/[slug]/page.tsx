@@ -3,8 +3,37 @@ import Upload from "../../components/reusables/core-functionality/Upload";
 import convertibles from "@/assets/convertibles";
 import Article from "@/app/components/reusables/Article";
 import { AiOutlineWarning } from "react-icons/ai";
+import { Metadata,ResolvingMetadata } from "next";
+
+type props ={
+  params:{slug:string}
+}
 
 const slugs = convertibles.map((option) => option.toLowerCase());
+
+export  async function generateMetadata({params}:props,parent?:ResolvingMetadata):Promise<Metadata>{
+
+  const { slug } = params;
+
+  const conversionType = slugs.find((s) => s === slug.toLowerCase()); //ex jpg-to-png
+  
+  const targetFormat = conversionType?.split("-")[2].toUpperCase();
+  const originalFormat = conversionType?.split("-")[0];
+
+  return  {
+
+    title:`Zasily convert ${originalFormat?.toLowerCase()} to ${targetFormat?.toLowerCase()} `,
+    description:`convert ${originalFormat} images to ${targetFormat} format. Our easy-to-use online tool ensures high-quality conversions with just a few clicks. Convert your images now for free and retain the best possible image quality in ${targetFormat} format.`,
+    robots: {
+     index: true,
+     follow: true,
+     nocache: false,
+     googleBot: {
+       index: true,
+     },
+   },
+   }
+}
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const { slug } = params;
@@ -19,6 +48,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   const targetFormat = conversionType.split("-")[2].toUpperCase();
   const originalFormat = conversionType.split("-")[0];
+
   let relatedTools = slugs.filter((s) =>
     s.toLowerCase().includes(originalFormat || targetFormat)
   );
@@ -48,8 +78,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
           originalFormat={originalFormat}
         />
         <div className="relative w-10/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
-          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center  md:border-r ">
-            <h2 className="w-full text-left text-3xl md:text-5xl font-extrabold p-4  text-gray-300">
+          <article className=" w-full md:w-4/5 flex flex-col justify-start items-center pr-2  md:border-r md:border-r-gray-700 ">
+            <h2 className="w-full text-left text-3xl md:text-4xl font-extrabold p-4  text-gray-300">
               {" "}
               {originalFormat} and {targetFormat} characteristics
             </h2>
@@ -67,3 +97,4 @@ export default async function Page({ params }: { params: { slug: string } }) {
     </>
   );
 }
+

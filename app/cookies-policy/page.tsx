@@ -1,3 +1,18 @@
+import {Metadata} from "next"
+
+export const metadata :Metadata = {
+
+  title:"Cookies Policy- imagebgemover.com",
+  description:"  Our cookie policy outlines how we use cookies to personalize content, analyze site traffic, and improve functionality. Understand your choices and preferences regarding cookies here.",
+  robots: {
+   index: true,
+   follow: true,
+   nocache: false,
+   googleBot: {
+     index: true,
+   },
+ },
+ }
 function page() {
   return (
     <article className="mt-16 w-4/5 flex flex-col justify-start items-center">

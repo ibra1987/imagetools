@@ -1,6 +1,21 @@
 import React from "react";
 import ContactForm from "./components/ContactForm";
+import {Metadata} from "next";
 
+
+export const metadata :Metadata = {
+
+  title:"Contact us- imagebgemover.com",
+  description:"Reach us with any inquiries or messages, and we'll get back to you promptly. We're here to assist you. Send us a message now!",
+  robots: {
+   index: true,
+   follow: true,
+   nocache: false,
+   googleBot: {
+     index: true,
+   },
+ },
+ }
 function page() {
   return (
     <div className="w-11/12 mx-auto flex flex-col justify-center items-center">

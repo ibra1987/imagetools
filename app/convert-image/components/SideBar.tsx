@@ -29,13 +29,13 @@ function SideBar({ relatedTools }: { relatedTools: string[] }) {
         </h3>
       )}
       <div className="w-full grid grid-cols-2 place-items-center border mb-6">
-        {relatedTools &&
+        {relatedTools && relatedTools.length> 0 &&
           relatedTools.map((tool, index) => {
             return (
               <Link
                 href={"/convert-image/" + tool}
                 key={`${tool}-${index}`}
-                className=" m-1 p-1 rounded text-yellow-gray-700"
+                className=" m-1 p-1 rounded text-gray-700"
               >
                 {tool.replaceAll("-", " ")}
               </Link>

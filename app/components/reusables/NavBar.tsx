@@ -11,11 +11,11 @@ function NavBar() {
   };
   const pathname = usePathname();
   const linkClass =
-    "  p-2 px-6  hover:bg-gray-300     transition duration-200 rounded hover:text-gray-900  ease-in-out";
+    "  p-2 hover:bg-gray-300 text-center mx-2  transition duration-200 rounded hover:text-gray-900  ease-in-out";
   const activeClass = "p-2 bg-gray-300 text-gray-900  transition  duration-200 ease-in-out";
   return (
-    <nav className="w-1/2 md:w-2/3  flex justify-end items-center relative z-10">
-      <ul className={"hidden  md:flex w-full justify-end items-center space-x-6  "}>
+    <nav className="w-1/2 md:flex-grow   flex justify-end items-center relative z-10">
+      <ul className={"hidden  lg:flex w-full justify-end items-center  "}>
         <li className={pathname === "/" ? linkClass + activeClass : linkClass}>
           <Link href={"/"}>Home</Link>
         </li>
@@ -48,7 +48,7 @@ function NavBar() {
         className={
           showMenu
             ? "hidden"
-            : "flex md:hidden w-2/12 flex-col space-y-1 cursor-pointer "
+            : "flex lg:hidden w-2/12 flex-col space-y-1 cursor-pointer "
         }
       >
         <div className="h-1 w-full border-b border-gray-400 "></div>
@@ -56,7 +56,7 @@ function NavBar() {
         <div className="h-1 w-full border-b border-gray-400"></div>
       </div>
       {showMenu && (
-        <ul className="w-full md:hidden flex flex-col justify-start items-center transition-all ease-in-out delay-100 ">
+        <ul className="w-full lg:hidden flex flex-col justify-start items-center transition-all ease-in-out delay-100 ">
           {showMenu && (
             <li className={""}>
               <IoMdClose

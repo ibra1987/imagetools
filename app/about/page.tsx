@@ -1,4 +1,20 @@
 import React from "react";
+import {Metadata} from "next";
+
+
+export const metadata :Metadata = {
+
+  title:"About- imagebgemover.com",
+  description:" a passionate 36-year-old self-taught developer hailing from the beautiful country of Morocco.<br/> I have always been fascinated by the world of coding and web development, and my journey in this exciting field began during the challenging times of the Corona pandemic in 2020.",
+  robots: {
+   index: true,
+   follow: true,
+   nocache: false,
+   googleBot: {
+     index: true,
+   },
+ },
+ }
 
 const pClass ="p-4 indent-2 my-4 leading-6 text-gray-400"
 export default function Page() {

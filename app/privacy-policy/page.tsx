@@ -1,3 +1,20 @@
+import {Metadata}  from "next"
+
+
+export const metadata :Metadata = {
+
+ title:"Privacy Policy - imagebgemover.com",
+ description:"Read our comprehensive privacy policy to understand how we handle and safeguard your personal information. Your trust is our priority. Learn more.",
+ robots: {
+  index: true,
+  follow: true,
+  nocache: false,
+  googleBot: {
+    index: true,
+  },
+},
+}
+
 function page() {
   return (
     <article className="mt-16 w-4/5 flex flex-col justify-start items-center">
