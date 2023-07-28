@@ -3,7 +3,7 @@ import Upload from "../../components/reusables/core-functionality/Upload";
 import convertibles from "@/assets/convertibles";
 import Article from "@/app/components/reusables/Article";
 import { AiOutlineWarning } from "react-icons/ai";
-import { Metadata,ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
 type props ={
   params:{slug:string}
@@ -11,7 +11,7 @@ type props ={
 
 const slugs = convertibles.map((option) => option.toLowerCase());
 
-export  async function generateMetadata({params}:props,parent?:ResolvingMetadata):Promise<Metadata>{
+export  async function generateMetadata({params}:props):Promise<Metadata>{
 
   const { slug } = params;
 
@@ -22,7 +22,7 @@ export  async function generateMetadata({params}:props,parent?:ResolvingMetadata
 
   return  {
 
-    title:`Zasily convert ${originalFormat?.toLowerCase()} to ${targetFormat?.toLowerCase()} `,
+    title:`Easily convert ${originalFormat?.toLowerCase()} to ${targetFormat?.toLowerCase()} `,
     description:`convert ${originalFormat} images to ${targetFormat} format. Our easy-to-use online tool ensures high-quality conversions with just a few clicks. Convert your images now for free and retain the best possible image quality in ${targetFormat} format.`,
     robots: {
      index: true,
