@@ -19,7 +19,7 @@ export  async function generateMetadata({params}:props):Promise<Metadata>{
   
   const targetFormat = conversionType?.split("-")[2].toUpperCase();
   const originalFormat = conversionType?.split("-")[0];
-
+//d
   return  {
 
     title:`Easily convert ${originalFormat?.toLowerCase()} to ${targetFormat?.toLowerCase()} `,
