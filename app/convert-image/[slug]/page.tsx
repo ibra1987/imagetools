@@ -1,12 +1,19 @@
 import SideBar from "@/app/convert-image/components/SideBar";
 import Upload from "../../components/reusables/core-functionality/Upload";
 import convertibles from "@/assets/convertibles";
+import converertiblesJson from "@/assets/convertiblesJson.json"
 import Article from "@/app/components/reusables/Article";
 import { AiOutlineWarning } from "react-icons/ai";
 import { Metadata } from "next";
 
 type props ={
   params:{slug:string}
+}
+
+type seoTags ={
+  slug:string,
+  title:string,
+  description:string
 }
 
 const slugs = convertibles.map((option) => option.toLowerCase());
@@ -19,11 +26,11 @@ export  async function generateMetadata({params}:props):Promise<Metadata>{
   
   const targetFormat = conversionType?.split("-")[2].toUpperCase();
   const originalFormat = conversionType?.split("-")[0];
-//d
+  const {title,description} : Partial<seoTags> = converertiblesJson.find((item:seoTags)=>item.slug === conversionType) || {}
   return  {
 
-    title:`Easily convert ${originalFormat?.toLowerCase()} to ${targetFormat?.toLowerCase()} `,
-    description:`convert ${originalFormat} images to ${targetFormat} format. Our easy-to-use online tool ensures high-quality conversions with just a few clicks. Convert your images now for free and retain the best possible image quality in ${targetFormat} format.`,
+    title:`${title} | Free Online Image Converter `,
+    description:description,
     robots: {
      index: true,
      follow: true,

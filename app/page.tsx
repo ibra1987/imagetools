@@ -1,3 +1,4 @@
+"use client"
 import BackgroundRemoval from "./components/homepage/BackgroundRemoval";
 import EmailSubscription from "./components/homepage/EmailSubscription";
 import FileCompression from "./components/homepage/FileCompression";
@@ -6,6 +7,9 @@ import ImageConversion from "./components/homepage/ImageConversion";
 import Showcase from "./components/homepage/Showcase";
 import SingleTool from "./components/homepage/SingleTool";
 import { Metadata } from "next";
+import convertibleObjects from "@/assets/convertibleObjects";
+import {useEffect} from "react"
+
 
 export const metadata: Metadata = {
   title:
@@ -22,6 +26,11 @@ export const metadata: Metadata = {
   },
 };
 export default function Home() {
+
+  useEffect(()=>{
+    console.log(convertibleObjects)
+
+  },[])
   return (
     <>
       <Hero />

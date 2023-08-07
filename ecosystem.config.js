@@ -6,12 +6,13 @@ module.exports = {
         args: 'start', // Arguments to pass to the script (in this case, 'start')
         instances: 1, // Set to 1 to run only one instance
         autorestart: true, // Automatically restart the app if it crashes
-        watch: false, // Set to true if you want to watch for file changes and automatically reload the app (useful during development)
-  
+        watch: false, // Set to true if you want to watch for file changes and automatically reload the app (useful dur>
         env: {
           NODE_ENV: 'production', // Set the Node.js environment to production
         },
       },
     ],
   };
+
+
   
