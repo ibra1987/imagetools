@@ -80,7 +80,8 @@ function Upload({
           } else {
             fileExtension = file.name.split(".")[1].toLowerCase();
           }
-          return fileExtension === originalFormat;
+          fileExtension === originalFormat;
+          return ;
         });
 
         if (!rightType) {

@@ -34,9 +34,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="w-11/12 flex flex-col justify-start items-center">
         <Showcase />
-      </div>
+     
       <SingleTool
         title="Get Transparent Background for any Image"
         imagePath="/assets/bg-removed.png"

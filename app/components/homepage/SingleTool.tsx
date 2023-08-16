@@ -17,7 +17,7 @@ function SingleTool({ title, imagePath, text, alt }: props) {
           <h3 className="text-center  font-extrabold border-gray-300   text-xl md:text-2xl">
             {title}
           </h3>
-          <p className="w-11/12  my-2 p-4 text-center font-medium    ">
+          <p className="w-full  my-2 p-4 text-center font-medium    ">
             {text}
           </p>
           <Link href="/remove-background" className="py-2 px-20 rounded  bg-red-600 text-gray-100 hover:bg-red-700 transition delay-75 ease-in-out text-xl font-extrabold tracking-wide">
@@ -26,7 +26,7 @@ function SingleTool({ title, imagePath, text, alt }: props) {
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-2 ">
           <div className="w-11/12  flex flex-col space-y-6 md:space-y-0 md:flex-row  justify-center items-center relative rounded">
-            <div className="w-96 h-96 relative rounded bg-transparent-image  ">
+            <div className="w-full h-60 md:w-96 md:h-96 relative rounded bg-transparent-image  ">
               <Image
                 alt={alt}
                 src={imagePath}

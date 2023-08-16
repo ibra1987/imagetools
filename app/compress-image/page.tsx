@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Free Image Size Compressiol Tool",
   description:
-    "Optimize Image Size for Improved Performance with Our Free Image Compression Tool - Enhance Website Speed and User Experience. Effortlessly Compress and Resize Images while Maintaining High Quality. Experience it Now!",
+    "Optimize your JPEG and PNG Images Size for Improved Performance with Our Free Image Compression Tool - Enhance Website Speed and User Experience. Effortlessly Compress and Resize Images while Maintaining High Quality. Experience it Now!",
   robots: {
     index: true,
     follow: true,
@@ -27,7 +27,7 @@ export default async function Page() {
         Compress Image size
       </h1>
       <p className="w-11/12 md:w-3/5 text-sm mx-auto">
-        Optimize Image Size for Improved Performance with Our Free Image
+        Optimize your <span className="text-red-400 text-xl">JPEG</span> and <span className="text-red-400 text-xl">PNG</span> Images Size for Improved Performance with Our Free Image
         Compression Tool - Enhance Website Speed and User Experience.
         Effortlessly Compress and Resize Images while Maintaining High Quality.
       </p>

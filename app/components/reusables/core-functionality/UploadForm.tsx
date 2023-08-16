@@ -10,7 +10,7 @@ function UploadForm({ len, onChange }: formProps) {
   return (
     <div className="w-full  mx-auto  flex flex-col justify-start items-center text-gray-400">
       <label
-        htmlFor="filePicker"
+        htmlFor="userImages"
         className="w-full text-center hover:cursor-pointer  p-10 outline-none border-2 border-gray-200 bg-gray-800 hover:bg-gray-700 transition-colors delay-75 ease-in-out border-dashed   text-medium flex flex-col justify-start items-center "
       >
         <h2 className="  font-extrabold tracking-wider text-2xl">
@@ -23,7 +23,7 @@ function UploadForm({ len, onChange }: formProps) {
         className={"w-full bg-white outline-none rounded  font-medium hidden"}
         type={"file"}
         placeholder=""
-        name={"filePicker"}
+        name={"userImages"}
         onChange={(e) => onChange(e)}
         multiple={true}
       />

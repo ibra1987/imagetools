@@ -7,22 +7,22 @@ const liClass =
 function Footer() {
   return (
     <footer className="w-full flex justify-center items-center p-4 border-t border-gray-600  text-gray-400 text-xs md:text-sm">
-      <div className="w-11/12 flex justify-center items-center ">
+      <div className="w-full flex justify-center items-start ">
         <ul className="w-full  flex flex-col justify-start items-center ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
             Current Services
           </h3>
           <li className={liClass}>
-            <Link href={"/remove-background"}>Remove image background</Link>
+            <Link href={"/remove-background"}>Background Removal</Link>
           </li>
           <li className={liClass}>
-            <Link href={"/compress-image"}>Compress image size</Link>{" "}
+            <Link href={"/compress-image"}>Image compressor</Link>{" "}
           </li>
           <li className={liClass}>
-            <Link href={"/convert-image"}>Convert image</Link>{" "}
+            <Link href={"/convert-image"}>Format conversion</Link>{" "}
           </li>
         </ul>
-        <ul className="w-full flex flex-col justify-start items-center ">
+        <ul className="w-full flex flex-col justify-start items-start ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
             Terms and Services
           </h3>
@@ -37,7 +37,7 @@ function Footer() {
             <Link href={"/cookies-policy"}>Cookies policy</Link>{" "}
           </li>
         </ul>
-        <ul className="w-full flex flex-col justify-start items-center ">
+        <ul className="w-full flex flex-col justify-start items-start">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
             About us
           </h3>
