@@ -5,7 +5,7 @@ import converertiblesJson from "@/assets/convertiblesJson.json"
 import Article from "@/app/components/reusables/Article";
 import { AiOutlineWarning } from "react-icons/ai";
 import { Metadata } from "next";
-
+import style from "../../components/reusables/styles/Article.module.css"
 type props ={
   params:{slug:string}
 }
@@ -86,10 +86,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
         />
         <div className="relative w-10/12 flex  flex-col space-x-2 md:flex-row md:justify-center md:items-start justify-start items-center ">
           <article className=" w-full md:w-4/5 flex flex-col justify-start items-center pr-2  md:border-r md:border-r-gray-700 ">
-            <h2 className="w-full text-left text-3xl md:text-4xl font-extrabold p-4  text-gray-300">
+            {/* <h2 className="w-full text-left text-3xl md:text-4xl font-extrabold p-4  text-gray-300">
               {" "}
               {originalFormat} and {targetFormat} characteristics
-            </h2>
+            </h2> */}
+             {/* @ts-expect-error Server Component */}
             <Article slug={slug} />
           </article>
           <SideBar relatedTools={relatedTools} />

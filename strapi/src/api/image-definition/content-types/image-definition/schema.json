@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_definitions",
+  "info": {
+    "singularName": "image-definition",
+    "pluralName": "image-definitions",
+    "displayName": "image definition",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
