@@ -7,8 +7,7 @@ import ImageConversion from "./components/homepage/ImageConversion";
 import Showcase from "./components/homepage/Showcase";
 import SingleTool from "./components/homepage/SingleTool";
 import { Metadata } from "next";
-import convertibleObjects from "@/assets/convertibleObjects";
-import {useEffect} from "react"
+
 
 
 export const metadata: Metadata = {
@@ -27,10 +26,7 @@ export const metadata: Metadata = {
 };
 export default function Home() {
 
-  useEffect(()=>{
-    console.log(convertibleObjects)
 
-  },[])
   return (
     <>
       <Hero />
@@ -46,8 +42,9 @@ export default function Home() {
      
 
       <EmailSubscription />
-      <div className="w-11/12 flex flex-col justify-start items-center  my-4">
+      <div className="w-11/12 flex flex-col justify-start items-center  text-gray-600   my-4">
         <FileCompression />
+        
         <ImageConversion />
         <BackgroundRemoval />
         {/* <ImageFilters /> */}

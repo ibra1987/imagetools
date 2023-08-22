@@ -5,12 +5,12 @@ import { FaArrowRight } from "react-icons/fa";
 function ImageConversion() {
   return (
     <section className="w-full flex flex-col justify-start items-center mt-6 text-sm ">
-      <h3 className="text-center font-extrabold border-b border-gray-600 text-gray-200 text-lg    md:text-2xl">
+      <h3 className="w-11/12 md:w-2/3 text-left font-extrabold p-4 border-gray-600  text-lg    md:text-2xl">
         Convert Images To Multiple Formats
       </h3>
       <div className=" relative w-full  flex justify-center items-center  space-x-6 ">
         <SiConvertio className=" text-4xl text-yellow-400" />
-        <p className="w-11/12 md:w-2/3 my-2 text-left indent-3 font-medium  text-gray-300 text-sm md:text-base  ">
+        <p className="w-11/12 md:w-2/3 my-2 text-left indent-3 font-medium   text-sm md:text-base  ">
           Transform your images effortlessly with our versatile image converter
           tool. Seamlessly convert between formats while preserving exceptional
           quality and optimizing file sizes for enhanced performance.

@@ -19,9 +19,9 @@ async function Article({slug}:{slug:string}){
     return <>...</>
   }
   return (
-    <div className="w-full text-gray-200 flex flex-col custom" >
+    <div className="w-full  flex flex-col custom" >
       <h2>{post.attributes.title}</h2>
-    <div className=" w-full  text-gray-200">
+    <div className=" w-full  ">
        {/* @ts-expect-error Server Component */}
 
     <MDXRemote source={post.attributes.content}/>

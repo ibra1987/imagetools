@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-function Logo() {
+function Logo({color}:{color:string}) {
   return (
-    <div className="relative bg-gray-300 rounded ">
+    <div className={"relative rounded " + color}>
       <Image
         src={"/assets/logo-svg.svg"}
         alt="imagebgremover.io"

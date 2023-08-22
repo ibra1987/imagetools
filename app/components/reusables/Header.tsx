@@ -20,10 +20,12 @@ function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const color = scrolled ? " bg-gray-300 ": ""
   return (
-    <header className={scrolled ? "bg-gray-800  w-full flex justify-center items-center p-2 py-4 fixed  text-gray-300 z-50 border-b border-b-gray-700" : "bg-gray-900  w-full flex justify-center items-center p-2 py-4 fixed  text-gray-300 z-50 "}>
+    <header className={scrolled ? "border-b border-gray-200 w-full bg-white flex justify-center items-center p-2 py-4 fixed   z-50 " : "  w-full flex justify-center items-center p-2 py-4 fixed  text-gray-800 z-50 "}>
       <section className=" w-10/12 flex justify-between items-start md:items-center">
-        <Logo />
+        <Logo color={color} />
         <NavBar />
       </section>
     </header>

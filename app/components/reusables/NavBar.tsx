@@ -11,8 +11,8 @@ function NavBar() {
   };
   const pathname = usePathname();
   const linkClass =
-    "  p-2 hover:bg-gray-300 text-center mx-2  transition duration-200 rounded hover:text-gray-900  ease-in-out";
-  const activeClass = "p-2 bg-gray-300 text-gray-900  transition  duration-200 ease-in-out";
+    "  p-2  text-center mx-2 border-b border-b-white hover:border-b-gray-200 transition duration-200 ease-in-out";
+  const activeClass = "p-2 border-b !border-b-gray-200   transition   duration-200 ease-in-out";
   return (
     <nav className="w-1/2 md:flex-grow   flex justify-end items-center relative z-10">
       <ul className={"hidden  lg:flex w-full justify-end items-center  "}>

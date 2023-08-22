@@ -2,11 +2,11 @@ import Link from "next/link";
 import React from "react";
 
 const liClass =
-  "w-full md:w-1/2 text-left hover:text-gray-200 transiton-colors ease-in-out delay-75";
+  "w-full md:w-1/2 flex justify-start items-center  hover:text-gray-200 transiton-colors ease-in-out delay-75";
 
 function Footer() {
   return (
-    <footer className="w-full flex justify-center items-center p-4 border-t border-gray-600  text-gray-400 text-xs md:text-sm">
+    <footer className="w-full flex justify-center items-center p-4 py-10 border-t border-gray-600 bg-gray-900  text-gray-400 text-xs md:text-sm">
       <div className="w-full flex justify-center items-start ">
         <ul className="w-full  flex flex-col justify-start items-center ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
@@ -22,7 +22,7 @@ function Footer() {
             <Link href={"/convert-image"}>Format conversion</Link>{" "}
           </li>
         </ul>
-        <ul className="w-full flex flex-col justify-start items-start ">
+        <ul className="w-full  flex flex-col justify-start items-center ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
             Terms and Services
           </h3>
@@ -37,7 +37,7 @@ function Footer() {
             <Link href={"/cookies-policy"}>Cookies policy</Link>{" "}
           </li>
         </ul>
-        <ul className="w-full flex flex-col justify-start items-start">
+        <ul className="w-full  flex flex-col justify-start items-center ">
           <h3 className="w-full md:w-1/2 my-2 text-left text-gray-300 font-medium">
             About us
           </h3>
