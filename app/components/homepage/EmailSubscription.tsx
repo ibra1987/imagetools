@@ -3,7 +3,7 @@ import React from "react";
 
 function EmailSubscription() {
   return (
-    <section className="h-60 w-full   flex flex-col justify-center items-center">
+    <section className="h-60 w-full   flex flex-col justify-center items-center ">
       <h1 className="w-full text-center  text-black font-extrabold tracking-wide text-2xl p-4">
         Have a suggestion or a question?
       </h1>

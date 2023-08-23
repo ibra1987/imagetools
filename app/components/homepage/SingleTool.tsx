@@ -11,7 +11,7 @@ type props = {
 
 function SingleTool({ title, imagePath, text, alt }: props) {
   return (
-    <section className="w-11/12  flex  justify-center items-center py-10 bg-gray-50  text-gray-500  rounded border-gray-800  ">
+    <section className="w-full  flex  justify-center items-center py-10 bg-gray-50  text-gray-500  rounded border-gray-800  ">
       <div className="w-full  flex flex-col-reverse md:flex-row  md:justify-center items-center space-y-10">
         <div className="w-full md:w-1/2 flex flex-col justify-center   items-center p-2  ">
           <h3 className="text-center  font-extrabold border-gray-300   text-xl md:text-2xl">

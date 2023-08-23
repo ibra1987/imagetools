@@ -42,7 +42,7 @@ export default function Home() {
      
 
       <EmailSubscription />
-      <div className="w-11/12 flex flex-col justify-start items-center  text-gray-600   my-4">
+      <div className="w-full flex flex-col justify-start items-center p-10  text-gray-200 bg-blue-400   mt-4">
         <FileCompression />
         
         <ImageConversion />

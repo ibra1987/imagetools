@@ -3,14 +3,14 @@ import { BiImages } from "react-icons/bi";
 import { IoIosImages } from "react-icons/io";
 //import { MdOutlineFilterBAndW } from "react-icons/md";
 
-const cardClass = " w-full lg:w-1/3 p-6 flex flex-col justify-start items-center h-64 text-sm  rounded shadow-md"
+const cardClass = " w-full lg:w-1/3 p-2 flex flex-col justify-start items-center h-56 text-sm  rounded shadow-xl"
 const pClass = " w-full my-2  indent-3 h-48   font-normal text-gray-500"
 
 
 function Showcase() {
  
   return (
-    <div className="w-full z-10 md:p-10 mb-24   flex flex-col  text-gray-500 justify-start items-center rounded  mt-4  ">
+    <div className="w-full z-10 md:p-10   flex flex-col  text-gray-500 justify-start items-center rounded  mt-4  ">
       <h2 className="w-full text-center text-4xl leading-6 font-extrabold mb-10 text-black tracking-widest">Serivces</h2>
       <ul className="lg:w-11/12  flex flex-col  lg:flex-row justify-center items-center lg:space-x-4 space-y-6 lg:space-y-0  ">
         <li className={cardClass }>
